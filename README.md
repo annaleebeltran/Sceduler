@@ -13,4 +13,4 @@ Scheduler utilizes third-party APIS like J-Query to help get current time of day
 
 ## License
 
-Please refer to the LICENSE in the PasswordGen repository.
+Please refer to the LICENSE in the Scheduler repository.
