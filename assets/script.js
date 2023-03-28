@@ -3,7 +3,7 @@ var date = dayjs();
 
 $(function () {
   // This function will get the each class with time-block and compare the time to the time-block id
-  // and will parse the time into the integer
+  // and will parse the time into an integer
   $(".time-block").each(function () {
     var hourblock = parseInt($(this).attr("id").split("hour")[1]);
 
@@ -40,6 +40,6 @@ $(function () {
   })
   // Added code to display the current date on the header of the page
   $("#currentDay").text(date.format('MMM D, YYYY'));
-  console.log(date);
+
 });
 
