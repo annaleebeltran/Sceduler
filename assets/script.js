@@ -29,7 +29,8 @@ $(function () {
   //This function save the written text into the local storage by the hour block written in
   $(document).ready(function () {
     // saveBtn event listener function
-    $(".saveBtn").on("click", function () {
+    $(".saveBtn").click(function (event) {
+      event.preventDefault();
       // Gets values from j-query
       var message = $(this).siblings(".description").val();
       var time = $(this).parent().attr("id");
@@ -38,7 +39,7 @@ $(function () {
     });
   })
   // Added code to display the current date on the header of the page
-  $("currentDay").text(date.format('MMM D, YYYY'));
+  $("#currentDay").text(date.format('MMM D, YYYY'));
   console.log(date);
 });
 
